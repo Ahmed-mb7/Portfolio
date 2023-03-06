@@ -11,17 +11,6 @@
 section {
     padding: 150px 100px;
 }
-
-/*header {
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-    background-color: #080808;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 100px;
-}*/
  
 .navbar {
     background-color: #080808;
@@ -58,7 +47,6 @@ section {
     display: flex;
     align-items: center; 
     background: url(img/Personal%20BG3.jpg) no-repeat;
-    /*background-color: #000000;*/
     background-size: cover;
     background-position: right top;
     background-attachment: fixed;
@@ -90,22 +78,22 @@ section {
 }
 
 .main-btn {
-    color: #fff;
-    background-color: #c9a66c;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 700;
+    color: #b59662;
+    font-size: 1.3em;
+    font-weight: 650;
+    padding: 15px 28px;
+    text-align: center;
     display: inline-block;
-    padding: 0.9250em 2.1850em;
+    text-decoration: none;
     letter-spacing: 1px;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-bottom: 40px;
-    transition: 0.7s ease;
+    border: 2px solid #b59662;
 }
 
 .main-btn:hover {
     background-color: #b59662;
-    transform: scale(1.1);
+    color: #fff;
 }
 
 .social-icons a {
@@ -116,7 +104,7 @@ section {
 
 .about {
     width: 100%;
-    min-height: 85vh;
+    min-height: 65vh;
     align-items: center;
     background-color: #111111;
     padding: 50px 100px;
@@ -130,16 +118,16 @@ section {
 .image img {
     width: 100%;
     height: auto;
-    max-width: 380px;
-    max-height: 380px;
-    padding-top: 45px;
-    padding-left: 15px;
+    max-width: 350px;
+    max-height: 350px;
+    margin-top: 75px;
+    margin-left: 50px;
 }
 
 .about-me { 
     width: 100%;
-    padding-right: 10px;
-    padding-left: 35px;
+    padding-right: 15px;
+    padding-left: 30px;
     padding-top: 80px;  
 }
 .Sign {
@@ -155,7 +143,7 @@ section {
 }
 
 .about-me p {
-    color: #ebebeb;
+    color: #d7d7d7;
     font-size: 1.0em;
     margin-top: 20px;
     line-height: 30px;
@@ -175,14 +163,6 @@ section {
     font-weight: 700;
     margin-bottom: 50px;
 }
-
-/*hr.line { 
-    width: 80px;
-    margin:0 auto;
-    border: 2px solid white;
-    background-color: #ffffff;
-    margin-bottom: 50px;  
-}*/
 
 .content {
     display: flex;
@@ -223,12 +203,12 @@ section {
 }
 
 .info p {
-    color: #ebebeb;
+    color: #d7d7d7; /*#ebebeb*/
     font-size: 0.9em;
 }
 
 .projects {
-    background-color: #080808;
+    background-color: #111111;
 }
 
 .projects .content{
@@ -264,7 +244,7 @@ section {
 
 .project-category {
     font-size: 0.9em;
-    color: #ebebeb;
+    color: #d7d7d7;
     font-weight: 500;
 }
 
@@ -282,14 +262,15 @@ section {
 }
 
 .more-details {
-    color: #fff;
+    color: #d7d7d7;
     font-size: 0.9em;
     font-weight: 500;
     text-decoration: none;
 }
 
 .more-details:hover {
-    color: gray;
+    color: #d7d7d7;
+    font-weight: 700;
 }
 
 .contact .icon{
@@ -326,8 +307,14 @@ section {
     padding: 0 13px 0 0;
 }
 
-@media (max-width:1280px){
+/*--------## Media Queries ##--------*/
+
+@media (max-width:1200px){
     
+      section{
+        padding: 80px 20px;
+    }
+
     header{
         padding: 10px 20px;
     }
@@ -343,38 +330,32 @@ section {
    .main {
         padding: 250px 10px 0 10px;
     }
-    .about {
-        min-height: 65vh;
+    
+     .title{
+        font-size: 2em;
     }
     
-    .title{
-        font-size: 2em;
+    .about {
+        min-height: 65vh;
+        padding: 50px 55px;
     }
      .about-me h2{
         font-size: 1.9em;
         }
     
-    section{
-        padding: 80px 20px;
-    }
     .col {
         padding: 20px 0px;
     }
     
-    /*.main-content h2{
-        font-size: 1em;
-    }
-    .main-content h3{
-        font-size: 1.5em;
-    }*/
-
     .content{
         flex-direction: column;
         align-items: center;
     }
 }
 
-@media (max-width:641px){
+/*-----------------------------------------*/
+
+@media (max-width:640px){
     body{
         font-size: 12px;
     }
@@ -386,15 +367,13 @@ section {
     }
     .image img {
         align-items: center;
+        margin-left: 0px;
+        max-width: 300px;
+        max-height: 300px;
     }
-
-    /*.main-content h2{
-        font-size: 0.8em;
-    }
-    .main-content h3{
-        font-size: 1.4em;
-    }*/
 }
+
+/*-----------------------------------------*/ 
 
 @media (max-width:300px){
     body{
@@ -408,28 +387,6 @@ section {
     }
 }
 
-/*@media (max-width:912px){
-    .main {
-        padding: 300px 10px 0 10px;
-    }
-    .about {
-        min-height: 65vh;
-    }
-    .card {
-        min-height: 25em;
-        min-width: 30em;
-        padding: 30px;
-    }
-    .card .icon {
-         font-size: 7em;
-        }
-    .info h3 {
-            font-size: 1.5em;
-        }
-    .info p {
-            font-size: 1em;
-        }
-    .contact .info p {
-            font-size: 1.5em;
-        }*/
-}
+/*-----------------------------------------*/
+
+
