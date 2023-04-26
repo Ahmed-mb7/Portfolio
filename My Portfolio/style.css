@@ -27,6 +27,9 @@ section {
     font-weight: 700;
     font-size: 1.8em;  /* 1.8 * 16 = 28.8 */
 }
+.logo:hover{
+     color: #c9a66c;
+}
 
  .navigation li a{
     color: white;
@@ -63,7 +66,7 @@ section {
     display: inline-block;
     margin-top: 10px;
     color: #c9a66c;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
 }
 
@@ -386,4 +389,7 @@ section {
         font-size: 8.5px;
     }
 }
+
+/*-----------------------------------------*/
+
 
