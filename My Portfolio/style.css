@@ -105,54 +105,6 @@ section {
     padding-right: 30px;
 }
 
-.about {
-    width: 100%;
-    min-height: 65vh;
-    align-items: center;
-    background-color: #111111;
-    padding: 50px 100px;
-} 
-
-.col {
-    width: 500px;
-    padding: 10px;
-}
-
-.image img {
-    width: 100%;
-    height: auto;
-    max-width: 350px;
-    max-height: 350px;
-    margin-top: 75px;
-    margin-left: 50px;
-}
-
-.about-me { 
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 30px;
-    padding-top: 80px;  
-}
-.Sign {
-    max-width: 150px;
-    max-height: 150px;
-    padding-top: 5px;
-}
-
-.about-me h2 {
-    color: #c9a66c;
-    font-size: 2.2em;
-    font-weight: 700;
-}
-
-.about-me p {
-    color: #d7d7d7;
-    font-size: 1.0em;
-    margin-top: 20px;
-    line-height: 30px;
-    letter-spacing: 0.5px;
-}
-
 .cards {
     background-color: #000000;
 }
@@ -338,14 +290,6 @@ section {
         font-size: 2em;
     }
     
-    .about {
-        min-height: 65vh;
-        padding: 50px 55px;
-    }
-     .about-me h2{
-        font-size: 1.9em;
-        }
-    
     .col {
         padding: 20px 10px;
     }
@@ -368,12 +312,6 @@ section {
     .social-icons {
         padding-right: 3px;
     }
-    .image img {
-        align-items: center;
-        margin-left: 0px;
-        max-width: 300px;
-        max-height: 300px;
-    }
 }
 
 /*-----------------------------------------*/ 
@@ -389,7 +327,3 @@ section {
         font-size: 8.5px;
     }
 }
-
-/*-----------------------------------------*/
-
-
